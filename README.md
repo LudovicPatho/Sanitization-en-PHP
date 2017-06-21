@@ -15,5 +15,13 @@ Ensuite on créé une variable avec la fonction filter_input_array.
     
 Si on 
 
-Vous trouverez tous les filtres disponnibles ici :
+## Sources
+
+* Vous trouverez tous les filtres disponnibles ici :
 http://php.net/manual/fr/filter.filters.sanitize.php
+
+* La documentation sur la fonction filter_input()
+http://php.net/manual/fr/function.filter-input.php
+
+* La documentation sur la fonction filter_input_array()
+http://php.net/manual/fr/function.filter-input.php 
