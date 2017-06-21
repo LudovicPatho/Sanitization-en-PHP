@@ -12,3 +12,8 @@
 Ensuite on créé une variable avec la fonction filter_input_array.   
 
     $result = filter_input_array(INPUT_POST, $options);
+    
+Si on 
+
+Vous trouverez tous les filtres disponnibles ici :
+http://php.net/manual/fr/filter.filters.sanitize.php
