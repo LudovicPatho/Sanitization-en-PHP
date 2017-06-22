@@ -20,7 +20,7 @@ Imaginons que nous avons un formulaire avec les inputs suivants :
 		<input type="text" name="message">
     </form>
 
-Tout d'abord, nous allons créer un tableau qui contient les filtres dont nous avons besoin. Vous trouverez tous les filtres utiles ici : http://php.net/manual/fr/filter.filters.sanitize.php. Il est important de conserver les noms de vos inputs. 
+Dans un premier temps, nous allons créer un tableau qui contient les filtres dont nous avons besoin. Vous trouverez tous les filtres utiles ici : http://php.net/manual/fr/filter.filters.sanitize.php. Pour les clés du tableau, il est important de conserver les noms de vos inputs. 
 
     $options = array(
     'first_name' 	=> FILTER_SANITIZE_STRING,
