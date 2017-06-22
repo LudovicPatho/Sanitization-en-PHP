@@ -8,13 +8,13 @@ Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dan
 ## Exemple :
 
     $options = array(
-    'name' 		=> FILTER_SANITIZE_STRING,
-    'lastName' 		=> FILTER_SANITIZE_STRING,
-    'mail' 		=> FILTER_VALIDATE_EMAIL,
-    'phone' 		=> FILTER_SANITIZE_NUMBER_INT,
-    'url' 		=> FILTER_SANITIZE_URL,
-    'subject' 		=> FILTER_SANITIZE_STRING,
-    'message' 		=> FILTER_SANITIZE_STRING);
+    'name' 	=> FILTER_SANITIZE_STRING,
+    'lastName' 	=> FILTER_SANITIZE_STRING,
+    'mail' 	=> FILTER_VALIDATE_EMAIL,
+    'phone' 	=> FILTER_SANITIZE_NUMBER_INT,
+    'url' 	=> FILTER_SANITIZE_URL,
+    'subject' 	=> FILTER_SANITIZE_STRING,
+    'message' 	=> FILTER_SANITIZE_STRING);
 
 Ensuite on créé une variable avec la fonction filter_input_array. Comme son nom l'indique, la fonction va retourner un Array(). 
 
