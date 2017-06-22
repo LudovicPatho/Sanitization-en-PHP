@@ -35,7 +35,7 @@ Ensuite on créé une variable $result avec la fonction filter_input_array. Comm
 
     $result = filter_input_array(INPUT_POST, $options);
     
-Et voilà, tous vos champs ont été sanitizé. En cas de problème, la fonction retourne un NULL si la variable est vide et un FALSE si il y a eu une erreur.
+Et voilà, tous vos champs ont été sanitizé ! En cas de problème, la fonction retourne un NULL si la variable est vide et un FALSE si il y a eu une erreur.
 
      if ($result != null AND $result!= FALSE) 
 	 {
