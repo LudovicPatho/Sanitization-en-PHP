@@ -5,7 +5,7 @@ Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dan
 ## Description 
     mixed filter_input_array ( int $type [, mixed $definition [, bool $add_empty = true ]] )
 Comme on peut le voir la fonction peut accepter des variables mixes, comme "string", "int" etc.
-Si un champs est vide, elle retournera un "NULL". Si il y a une erreur lors de la sanitization, la fonction retournera un "FALSE". 
+Si un champs est vide, elle retournera un "NULL". S'il y a une erreur lors de la sanitization, la fonction retournera un "FALSE". 
     
 ## Exemple :
 Imaginons que nous avons un formulaire avec les inputs suivants :
@@ -35,15 +35,15 @@ Ensuite on créé une variable $result avec la fonction filter_input_array. Comm
 
     $result = filter_input_array(INPUT_POST, $options);
     
-Et voilà, tous vos champs ont été sanitizé ! En cas de problème, la fonction retourne un NULL si la variable est vide et un FALSE si il y a eu une erreur.
+Et voilà, tous vos champs ont été sanitizés ! En cas de problème, la fonction retourne un NULL si la variable est vide et un FALSE s'il y a eu une erreur.
 
      if ($result != null AND $result!= FALSE) 
 	 {
-        echo "Tous les champs ont été néttoyé !";
+        echo "Tous les champs ont été nettoyés !";
      } 
      else
      {
-        echo "Un champs est vide ou n'est pas correcte!";
+        echo "Un champs est vide ou n'est pas correct!";
      }
      
 Pour afficher les résultats, on fait une boucle foreach avec la variable $result :     
