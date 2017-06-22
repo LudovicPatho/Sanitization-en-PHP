@@ -4,8 +4,11 @@ Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dan
 
 ## Description 
     mixed filter_input_array ( int $type [, mixed $definition [, bool $add_empty = true ]] )
+Comme on peut le voir la fonction peut accepter des variables mixes, comme "string", "int" etc.
+Si un champs est vide, elle retournera un "NULL". Si il y a une erreur lors de la sanitization, la fonction retournera un "FALSE". 
     
 ## Exemple :
+Tout d'abord, nous allons créer un tableau qui contient les filtres dont nous avons besoin. Vous trouverez tous les filtres utiles ici : http://php.net/manual/fr/filter.filters.sanitize.php. Il est important de conserver les noms de vos inputs. 
 
     $options = array(
     'name' 		=> FILTER_SANITIZE_STRING,
@@ -16,7 +19,7 @@ Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dan
     'subject' 	=> FILTER_SANITIZE_STRING,
     'message' 	=> FILTER_SANITIZE_STRING);
 
-Ensuite on créé une variable avec la fonction filter_input_array. Comme son nom l'indique, la fonction va retourner un Array(). 
+Ensuite on créé une variable $result avec la fonction filter_input_array. Comme son nom l'indique, la fonction va également retourner un Array() qui sera associatif. Cette onction doit recevoir au moins deux arguments. Ici INPUT_POST pour récupérer les valeurs encodées dans le champs et la variable $option pour appliquer les filtres.
 
     $result = filter_input_array(INPUT_POST, $options);
     
