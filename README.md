@@ -1,11 +1,13 @@
 # Sanitization-en-PHP
 
+Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dans un formulaire. Dans ce cas, il est sans doute préférable de faire la sanitization avec la fonction filter_input_array.  
+
     $options = array(
-    'name' 			=> FILTER_SANITIZE_STRING,
+    'name' 		=> FILTER_SANITIZE_STRING,
     'lastName' 		=> FILTER_SANITIZE_STRING,
-    'mail' 			=> FILTER_VALIDATE_EMAIL,
+    'mail' 		=> FILTER_VALIDATE_EMAIL,
     'phone' 		=> FILTER_SANITIZE_NUMBER_INT,
-    'url' 		    => FILTER_SANITIZE_URL,
+    'url' 		=> FILTER_SANITIZE_URL,
     'subject' 		=> FILTER_SANITIZE_STRING,
     'message' 		=> FILTER_SANITIZE_STRING);
 
