@@ -8,11 +8,23 @@ Comme on peut le voir la fonction peut accepter des variables mixes, comme "stri
 Si un champs est vide, elle retournera un "NULL". Si il y a une erreur lors de la sanitization, la fonction retournera un "FALSE". 
     
 ## Exemple :
+Imaginons que nous avons un formulaire avec les inputs suivants :
+
+    <form>
+		<input type="text" name="first_name" >
+		<input type="text" name="last_name" >
+		<input type="email" name="mail">
+		<input type="tel" name="phone">
+		<input type="url" name="url">
+		<input type="text" name="subject">
+		<input type="text" name="message">
+    </form>
+
 Tout d'abord, nous allons créer un tableau qui contient les filtres dont nous avons besoin. Vous trouverez tous les filtres utiles ici : http://php.net/manual/fr/filter.filters.sanitize.php. Il est important de conserver les noms de vos inputs. 
 
     $options = array(
-    'name' 		=> FILTER_SANITIZE_STRING,
-    'lastName' 	=> FILTER_SANITIZE_STRING,
+    'first_name' 		=> FILTER_SANITIZE_STRING,
+    'last_Name' 	=> FILTER_SANITIZE_STRING,
     'mail' 		=> FILTER_VALIDATE_EMAIL,
     'phone' 	=> FILTER_SANITIZE_NUMBER_INT,
     'url' 		=> FILTER_SANITIZE_URL,
