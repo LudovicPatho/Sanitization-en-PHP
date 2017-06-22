@@ -11,7 +11,7 @@ Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dan
     'name' 		=> FILTER_SANITIZE_STRING,
     'lastName' 	=> FILTER_SANITIZE_STRING,
     'mail' 		=> FILTER_VALIDATE_EMAIL,
-    'phone' 		=> FILTER_SANITIZE_NUMBER_INT,
+    'phone' 	=> FILTER_SANITIZE_NUMBER_INT,
     'url' 		=> FILTER_SANITIZE_URL,
     'subject' 	=> FILTER_SANITIZE_STRING,
     'message' 	=> FILTER_SANITIZE_STRING);
