@@ -37,10 +37,10 @@ Dans un premier temps, nous allons créer un tableau qui contient les filtres do
     'first_name' 	=> FILTER_SANITIZE_STRING,
     'last_Name' 	=> FILTER_SANITIZE_STRING,
     'mail' 		=> FILTER_VALIDATE_EMAIL,
-    'phone' 	=> FILTER_SANITIZE_NUMBER_INT,
+    'phone' 		=> FILTER_SANITIZE_NUMBER_INT,
     'url' 		=> FILTER_SANITIZE_URL,
-    'subject' 	=> FILTER_SANITIZE_STRING,
-    'message' 	=> FILTER_SANITIZE_STRING);
+    'subject' 		=> FILTER_SANITIZE_STRING,
+    'message' 		=> FILTER_SANITIZE_STRING);
 ```
 
 Ensuite on créé une variable $result avec la fonction filter_input_array. Comme son nom l'indique, la fonction va également retourner un Array() qui sera associatif. Cette onction doit recevoir au moins deux arguments. Ici INPUT_POST pour récupérer les valeurs encodées dans le champs et la variable $option pour appliquer les filtres.
