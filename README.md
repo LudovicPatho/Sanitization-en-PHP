@@ -19,8 +19,8 @@ Valeur de la variable demandée en cas de succès, FALSE si le filtre échoue, o
     
 ## Exemple :
 Imaginons que nous avons un formulaire avec les inputs suivants :
-
-    <form>
+```html
+    <form>
 		<input type="text" name="first_name" >
 		<input type="text" name="last_name" >
 		<input type="email" name="mail">
@@ -28,8 +28,8 @@ Imaginons que nous avons un formulaire avec les inputs suivants :
 		<input type="url" name="url">
 		<input type="text" name="subject">
 		<input type="text" name="message">
-    </form>
-
+    </form>
+```
 Dans un premier temps, nous allons créer un tableau qui contient les filtres dont nous avons besoin. Vous trouverez tous les filtres ici : http://php.net/manual/fr/filter.filters.sanitize.php. Pour les clés du tableau, il est important de conserver les noms de vos inputs. 
 
     $options = array(
