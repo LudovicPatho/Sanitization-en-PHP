@@ -51,7 +51,7 @@ Dans un premier temps, nous allons créer un tableau qui contient les filtres do
     'message' 		=> FILTER_SANITIZE_STRING);
 ```
 
-Ensuite on créé une variable $result avec la fonction filter_input_array. Comme son nom l'indique, la fonction va également retourner un Array() qui sera associatif. Cette onction doit recevoir au moins deux arguments. Ici INPUT_POST pour récupérer les valeurs encodées dans le champs et la variable $option pour appliquer les filtres.
+Ensuite on créé une variable $result avec la fonction filter_input_array. Comme son nom l'indique, la fonction va également retourner un Array() qui sera associatif. Cette fonction doit recevoir au moins deux arguments. Ici INPUT_POST pour récupérer les valeurs encodées dans le champs et la variable $option pour appliquer les filtres.
 
 ```php  
   $result = filter_input_array(INPUT_POST, $options);  
