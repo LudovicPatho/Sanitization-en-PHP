@@ -1,6 +1,6 @@
 # Sanitization-en-PHP
 
-## Sanitizé ?! Á quoi ça sert ?
+## Sanitizé ?! À quoi ça sert ?
 
 En français, on pourrait traduire cela par "désinfecté". Quand les utilisateurs peuvent entrer des données comme dans un formulaire de contact, il est important de s'assurer qu'il n'y ait pas de tentavive d'injection sql ou autre tentavive de piratage. C'est pour cela que nous allons désinfecter TOUTES les données entrées par l'utilisateur. 
 
