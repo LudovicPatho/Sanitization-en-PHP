@@ -1,6 +1,10 @@
 # Sanitization-en-PHP
 
-Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dans un formulaire. Dans ce cas, il est sans doute préférable de faire la sanitization avec la fonction filter_input_array(). Cette fonction est utile pour récupérer plusieurs valeurs sans avoir à appeler plusieurs fois la fonction filter_input().
+## Sanitizé ?! Á quoi ça sert ?
+
+En français, on pourrait traduire cela par "désinfecté". Quand les utilisateurs peuvent entrer des données comme dans un formulaire de contact, il est important de s'assurer qu'il n'y ait pas de tentavive d'injection sql ou autre tentavive de piratage. C'est pour cela que nous allons désinfecter TOUTES les données entrées par l'utilisateur. 
+
+Et il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dans un formulaire. Dans ce cas, il est sans doute préférable de faire la sanitization avec la fonction filter_input_array(). Cette fonction est utile pour récupérer plusieurs valeurs sans avoir à appeler plusieurs fois la fonction filter_input().
 
 ## Description 
 
