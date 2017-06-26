@@ -59,10 +59,12 @@ Et voilà, tous vos champs ont été sanitizés ! En cas de problème, la foncti
      else
      {
         echo "Un champs est vide ou n'est pas correct!";
-     }
-     
-Pour afficher les résultats, on fait une boucle foreach avec la variable $result :     
-     
+     }
+```
+     
+Pour afficher les résultats, on fait une boucle foreach avec la variable $result :  
+
+```php     
      foreach($options as $key => $value) 
 	 {
         echo $result[$key];
