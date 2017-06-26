@@ -3,8 +3,11 @@
 Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dans un formulaire. Dans ce cas, il est sans doute préférable de faire la sanitization avec la fonction filter_input_array(). Cette fonction est utile pour récupérer plusieurs valeurs sans avoir à appeler plusieurs fois la fonction filter_input().
 
 ## Description 
-    mixed filter_input_array ( int $type [, mixed $definition [, bool $add_empty = true ]] )
-    
+
+```php
+    mixed filter_input_array ( int $type [, mixed $definition [, bool $add_empty = true ]] )
+```
+
 **§type :**
 Une constante parmi INPUT_GET, INPUT_POST, INPUT_COOKIE, INPUT_SERVER ou INPUT_ENV. Elle permet de récupérer dans ce cas-ci les inputs envoyé par la méthode POST.
 
