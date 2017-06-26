@@ -53,7 +53,7 @@ Et voilà, tous vos champs ont été sanitizés ! En cas de problème, la foncti
 
 ```php
      if ($result != null AND $result!= FALSE) 
-	 {
+     {
         echo "Tous les champs ont été nettoyés !";
      } 
      else
@@ -66,7 +66,7 @@ Pour afficher les résultats, on fait une boucle foreach avec la variable $resul
 
 ```php     
      foreach($options as $key => $value) 
-	 {
+     {
         echo $result[$key];
      }
 ```
