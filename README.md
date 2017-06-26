@@ -22,7 +22,7 @@ https://www.figma.com/file/EiwrtimqcaqxDZj2Lf7orn5U/Sanitisation
 Une constante parmi INPUT_GET, INPUT_POST, INPUT_COOKIE, INPUT_SERVER ou INPUT_ENV. Elle permet de récupérer dans ce cas-ci les inputs envoyé par la méthode POST.
 
 **filter :**
-L'ID du filtre à appliquer. La Types de filtres page du manuel liste les filtres disponibles.Si non spécifié, FILTER_DEFAULT sera utilisé, ce qui est équivalent à FILTER_UNSAFE_RAW. Cela reviendra à n'avoir aucun filtre en place par défaut. Les filtres existants : http://php.net/manual/fr/filter.filters.sanitize.php
+L'ID du filtre à appliquer. La page du manuel PHP liste les filtres disponibles. Si le filtre n'est pas spécifié, FILTER_DEFAULT sera utilisé, ce qui est équivalent à FILTER_UNSAFE_RAW. Cela reviendrait à n'avoir aucun filtre en place par défaut. Les filtres existants : http://php.net/manual/fr/filter.filters.sanitize.php
 
 **Valeurs de retour :**
 Valeur de la variable demandée en cas de succès, FALSE si le filtre échoue, ou NULL si la variable n'est pas définie. Si le drapeau FILTER_NULL_ON_FAILURE est utilisé, la fonction retournera FALSE si la variable n'est pas définie et NULL si le filtre échoue.
