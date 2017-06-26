@@ -45,10 +45,9 @@ Dans un premier temps, nous allons créer un tableau qui contient les filtres do
 
 Ensuite on créé une variable $result avec la fonction filter_input_array. Comme son nom l'indique, la fonction va également retourner un Array() qui sera associatif. Cette onction doit recevoir au moins deux arguments. Ici INPUT_POST pour récupérer les valeurs encodées dans le champs et la variable $option pour appliquer les filtres.
 
-  ```php  
-  $result = filter_input_array(INPUT_POST, $options);
-  
-  ```
+```php  
+  $result = filter_input_array(INPUT_POST, $options);  
+```
     
 Et voilà, tous vos champs ont été sanitizés ! En cas de problème, la fonction retourne un NULL si la variable est vide et un FALSE s'il y a eu une erreur.
 
