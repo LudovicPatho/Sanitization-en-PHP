@@ -72,7 +72,7 @@ Et voilà, tous vos champs ont été sanitizés ! En cas de problème, la foncti
      }
 ```
      
-Enfin, on fait une boucle foreach avec la fonction trim pour supprimer les espaces:  
+Enfin, on peut faire une boucle foreach avec la fonction trim pour supprimer les espaces (pas obligatoiore):  
 
 ```php     
      foreach($options as $key => $value) 
