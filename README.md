@@ -72,15 +72,24 @@ Et voilà, tous vos champs ont été sanitizés ! En cas de problème, la foncti
      }
 ```
      
-Pour afficher les résultats, on fait une boucle foreach avec la variable $result :  
+Enfin, on fait une boucle foreach avec la fonction trim pour supprimer les espaces:  
 
 ```php     
      foreach($options as $key => $value) 
      {
-        echo $result[$key];
+        $result[$key]=trim($result[$key]);
      }
 ```
-    
+Puisque $result est un tableau, on affiche les résultats de manière habituelle.
+
+```php
+	echo $result['first_name'];
+	echo $result['last_name'];
+	echo $result['email'];
+	echo $result['phone'];
+	//Etc...
+```
+
 ## Sources
 
 * Vous trouverez tous les filtres disponibles ici : http://php.net/manual/fr/filter.filters.sanitize.php
