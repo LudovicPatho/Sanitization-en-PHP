@@ -80,7 +80,7 @@ Enfin, on peut faire une boucle foreach avec la fonction trim pour supprimer les
         $result[$key]=trim($result[$key]);
      }
 ```
-Puisque ```php $result``` est un tableau, on affiche les résultats de manière habituelle.
+Puisque ``` $result``` est un tableau, on affiche les résultats de manière habituelle.
 
 ```php
 	echo $result['first_name'];
