@@ -1,8 +1,10 @@
 # Sanitization en PHP
 
+
 ## Sanitiser ?! À quoi ça sert ?
 
 En français, on pourrait traduire cela par "désinfecter". Quand les utilisateurs peuvent entrer des données comme dans un formulaire de contact, il est important de s'assurer qu'il ne s'agit pas d'une tentative d'attaque (comme par exemple, les injection sql) voire une tentative de piratage. C'est pour cela que nous allons désinfecter TOUTES les données entrées par l'utilisateur AVANT de les manipuler dans notre script. 
+
 
 ## Une méthode pratique
 Il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dans un formulaire. Dans ce cas, il est préférable de réaliser la sanitization via la fonction `filter_input_array()`. Cette fonction est utile pour récupérer plusieurs valeurs sans avoir à appeler plusieurs fois la fonction `filter_input()`.
@@ -28,7 +30,9 @@ L'ID du filtre à appliquer. La page du manuel PHP liste les filtres disponibles
 Valeur de la variable demandée en cas de succès, `FALSE` si le filtre échoue, ou `NULL` si la variable n'est pas définie. Si le drapeau `FILTER_NULL_ON_FAILURE` est utilisé, la fonction retournera `FALSE` si la variable n'est pas définie et `NULL` si le filtre échoue.
     
 ## Exemple :
+
 Imaginons un formulaire avec les inputs suivants :
+
 ```html
     <form>
 		<input type="text" name="first_name" >
@@ -73,15 +77,25 @@ if ($result != null AND $result != FALSE) {
 }
 ```
      
+
 Pour afficher les résultats, on fait une boucle `foreach` avec la variable `$result` :  
 
 ```php     
      foreach($options as $key => $value) 
      {
-        echo $result[$key];
+        $result[$key]=trim($result[$key]);
      }
 ```
-    
+Puisque ``` $result``` est un tableau, on peut affiche les résultats de manière habituelle.
+
+```php
+	echo $result['first_name'];
+	echo $result['last_name'];
+	echo $result['email'];
+	echo $result['phone'];
+	//Etc...
+```
+
 ## Sources
 
 * Vous trouverez tous les filtres disponibles ici : http://php.net/manual/fr/filter.filters.sanitize.php
