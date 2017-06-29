@@ -1,4 +1,4 @@
-# Sanitization en PHP
+# Sanitisation en PHP
 
 
 ## Sanitiser ?! À quoi ça sert ?
