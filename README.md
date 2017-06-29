@@ -1,8 +1,8 @@
 # Sanitization-en-PHP
 
-## Sanitizé ?! À quoi ça sert ?
+## Sanitizer ?! À quoi ça sert ?
 
-En français, on pourrait traduire cela par "désinfecter". Quand les utilisateurs peuvent entrer des données comme dans un formulaire de contact, il est important de s'assurer qu'il n'y ait pas de tentavive d'injection sql ou autre tentavive de piratage. C'est pour cela que nous allons désinfecter TOUTES les données entrées par l'utilisateur. 
+En français, on pourrait traduire cela par "désinfecter". Quand les utilisateurs peuvent entrer des données comme dans un formulaire de contact, il est important de s'assurer qu'il n'y ait pas de tentavive d'injection SQL ou autre tentative de piratage. C'est pour cela que nous allons désinfecter TOUTES les données entrées par l'utilisateur. 
 
 Et il arrive parfois qu'on ait besoin de traiter un nombre important d'entrées dans un formulaire. Dans ce cas, il est sans doute préférable de faire la sanitization avec la fonction filter_input_array(). Cette fonction est utile pour récupérer plusieurs valeurs sans avoir à appeler plusieurs fois la fonction filter_input().
 
@@ -28,7 +28,7 @@ L'ID du filtre à appliquer. La page du manuel PHP liste les filtres disponibles
 Valeur de la variable demandée en cas de succès, FALSE si le filtre échoue, ou NULL si la variable n'est pas définie. Si le drapeau FILTER_NULL_ON_FAILURE est utilisé, la fonction retournera FALSE si la variable n'est pas définie et NULL si le filtre échoue.
     
 ## Exemple :
-Imaginons que nous avons un formulaire avec les inputs suivants :
+Imaginons que nous ayons un formulaire avec les inputs suivants :
 ```html
     <form>
 		<input type="text" name="first_name" >
