@@ -3,7 +3,6 @@
 
 ## Sanitiser ?! À quoi ça sert ?
 
-
 En français, on pourrait traduire cela par "désinfecter". Quand les utilisateurs peuvent entrer des données comme dans un formulaire de contact, il est important de s'assurer qu'il ne s'agit pas d'une tentative d'attaque (comme par exemple, les injection sql) voire une tentative de piratage. C'est pour cela que nous allons désinfecter TOUTES les données entrées par l'utilisateur AVANT de les manipuler dans notre script. 
 
 
